@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Request for New  PAN Card or/And changes or correction in PAN Data<br>
+        Field marked with (asterisk) are mandatory to avoid mistakes(s) please refer <span class="span-01">guidelines</span>
+        and <span class="span-01">instructions</span></p>
+    </header>
+    <form action="">
+        <div class="main">
+        <div style="width: 100%;">
+            <table class="tb-01">   
+            <tr>
+                <td style="width: 5%;"></td>
+                <td>
+                    * Whether Citizen of India
+                    <input type="radio" name="nationality" id="ind">
+                    <label for="ind">Yes</label>
+                    <input type="radio" name="nationality" id="non-ind">
+                    <label for="non-ind">No</label>
+                </td> 
+                <td rowspan="8" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 5%;"></td>
+                <td>
+                    * Permanent Account Number (PAN)
+                    <input type="text" name="pan" id="pan-card" placeholder="PAN Number">
+                </td>
+            </tr>
+            <tr>
+                <td class="chk-bx"><input type="checkbox" name="name" id="username"></td>
+                <td>* 1.Name</td>
+            </tr>
+            <tr>
+                <td style="width: 5%;"></td>
+                <td>
+                    * Title
+                    <input type="radio" name="title" id="mr">
+                    <label for="mr">Shri/Mr</label>
+                    <input type="radio" name="title" id="mrs">
+                    <label for="smrs">Shri/Mrs</label>
+                    <input type="radio" name="title" id="kumari">
+                    <label for="kumari">Kumari/Ms</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 5%;"></td>
+                <td>
+                    <li class="le-01">
+                        LastName/Surname <br>
+                        <input type="text" name="LastName" id="lname">
+                    </li>
+                    <li class="le-01">
+                        First Name <br>
+                        <input type="text" name="FirstName" id="fname">
+                    </li>
+                    <li class="le-01">
+                        Middle Name <br>
+                        <input type="text" name="FirstName" id="mname">
+                    </li>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 5%;"></td>
+                <td>* Name as you would like it printed on the card <span class="span-02">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mrs, M/s, Alias etc are not allowed)</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <li class="le-01">
+                        <input type="text" name="printed-name" id="name-on-pan">
+                    </li>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>* Details of Parents <span class="span-02">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mrs, M/s, Alias etc are not allowed)</span></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div style="width: 100%;">
+            <table class="tb-02">        
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>
+                        <li class="le-01">
+                            Whether mother is single parent and you wish to apply for Pan by <br>
+                            furnishing the name of your mother only 
+                        </li> 
+                    </td>
+                    <td style="width: 50%;">
+                        <li class="le-01">
+                            <input type="radio" name="nationality" id="ind">
+                            <label for="ind">Yes</label>
+                        <input type="radio" name="nationality" id="non-ind">
+                            <label for="non-ind">No</label>                
+                        </li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="width: 100%;">
+            <table class="tb-03">
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>* Father's Name <span class="span-02">(Mandatory filed Even married women should give father's name only)</span></td>
+                    <td rowspan="4" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>
+                        <li class="le-01">
+                            LastName/Surname <br>
+                            <input type="text" name="LastName" id="lname">
+                        </li>
+                        <li class="le-01">
+                            First Name <br>
+                            <input type="text" name="FirstName" id="fname">
+                        </li>
+                        <li class="le-01">
+                            Middle Name <br>
+                            <input type="text" name="FirstName" id="mname">
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>* Mothers's Name <span class="span-02">(This field is optional)</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>
+                        <li class="le-01">
+                            LastName/Surname <br>
+                            <input type="text" name="LastName" id="lname">
+                        </li>
+                        <li class="le-01">
+                            First Name <br>
+                            <input type="text" name="FirstName" id="fname">
+                        </li>
+                        <li class="le-01">
+                            Middle Name <br>
+                            <input type="text" name="FirstName" id="mname">
+                        </li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+ <div style="width: 100%;">
+            <table class="tb-04">
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>
+                            * 4.Select Parent name which is to be printed ion the card <br>
+                            <span class="span-02">(In case no option is provided then PAN Card willbe issued with father name)
+                    </td>    
+                    <td style="width: 50%;">
+                        <li class="le-01">
+                            <input type="radio" name="parentname" id="fathername">
+                            <label for="fathername">Father Name</label>
+                            <input type="radio" name="parentname" id="mothername">
+                            <label for="fathername">Mother Name</label>
+                        </li>
+                    </td>    
+                </tr>
+            </table>
+    </div>
+
+    <div style="width:100%">
+            <table class="tb-04">
+                <tr>
+                    <td class="chk-bx" style="width: 5%;"><input type="checkbox" name="name" id="username"></td>
+                    <td>
+                            * Date of Birth/Incorporation/Agreement Partnership or Trust Deed/Formation <br>
+                              of Body of Individuals/ Association of Persons
+                    </td>
+                    <td style="width: 50%;">
+                       <li class="le-01">
+                                DD <br>
+                                <select name="date" id="date">
+                                    <option value="date">DD</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
+                                </select>
+                            </li>
+                            <li class="le-01">
+                                MM <br>
+                                <select name="month" id="month">
+                                    <option value="day">MM</option>
+                                    <option value="">Jan</option>
+                                    <option value="">Feb</option>
+                                    <option value="">March</option>
+                                    <option value="">Apr</option>
+                                    <option value="">May</option>
+                                    <option value="">Jun</option>
+                                    <option value="">Jul</option>
+                                    <option value="">Aug</option>
+                                    <option value="">Sep</option>
+                                    <option value="">Oct</option>
+                                    <option value="">Nov</option>
+                                    <option value="">Dec</option>
+                                </select>
+                            </li>
+                            <li class="le-01">
+                                YYYY <br>
+                                <select name="year" id="year">
+                                    <option value="day">YYYY</option>
+                                    <option value="">2001</option>
+                                    <option value="">2002</option>
+                                    <option value="">2003</option>
+                                    <option value="">2004</option>
+                                    <option value="">2005</option>
+                                    <option value="">2006</option>
+                                    <option value="">2007</option>
+                                    <option value="">2008</option>
+                                    <option value="">2009</option>
+                                    <option value="">2010</option>
+                                    <option value="">2011</option>
+                                    <option value="">2022</option>
+                                </select>
+                            </li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:100%">
+            <table class="tb-04">
+                <tr>
+                    <td class="chk-bx" style="width: 5%;"><input type="checkbox" name="name" id="username"></td>
+                    
+                    <td>
+                            * 6. Gender 
+                </td>
+                <td style="width: 50%;">
+                        <li class="le-01">
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>     
+                                <input type="radio" name="gender" id="transgender">
+                                <label for="transgender">Transgender</label>                 
+                        </li>
+                </td>
+                </tr>
+
+            </table>
+        </div>
+        <div style="width:100%">
+            <table class="tb-04">
+                <tr>
+                    <td class="chk-bx" style="width: 5%;"><input type="checkbox" name="name" id="username"></td>
+                    <td>
+                            * 7. Photo Mismatch
+                    </td>
+                    <td rowspan="4" colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="chk-bx" style="width: 5%;"><input type="checkbox" name="name" id="username"></td>
+                    <td>
+                            * 8. Signature Mismatch
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:100%">
+            <table class="tb-04">
+                <tr>
+                    <td class="chk-bx" style="width: 5%;"><input type="checkbox" name="name" id="username"></td>
+                    <td>
+                            * 9. Address for communication
+                        </td>
+                        <td style="width: 50%;">
+                            <li class="le-01">
+                                <input type="radio" name="address" id="res">
+                                <label for="res">Residential</label>
+                                <input type="radio" name="address" id="off">
+                                <label for="off">Office</label>
+                            </li>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:100%">
+            <table class="tb-04">
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>
+                            * Office Name <span>(To be filled in case of only office address)</span>
+                            <td style="width: 50%;">
+                                <li class="le-01">
+                                <input type="text" name="office-name" id="Office-Name" style="padding:  0px 100px 0px 0px;">                     
+                        </li>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:100%">
+            <table class="tb-04">
+                <tr>
+                    <td style="width: 5%;"></td>
+                    <td>
+                            * Flat Door / Block No
+                    </td> 
+                    <td style="width: 50%;">
+                        <li class="le-01">
+                            <input type="text" name="office-name" id="Office-Name" style="padding:  0px 100px 0px 0px;">                      
+                        </li>
+                    </td>       
+                </tr>
+            </table>
+        </div>
+    </div>    
+    </form>
+    
+</body>
+</html>
